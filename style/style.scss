@@ -1,0 +1,124 @@
+html{
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+*,*::before,*::before{
+    box-sizing: inherit;
+}
+*{
+    // border:1px solid #000;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    min-height:100%;
+    color:#000;
+    background-image: url(/img/background-image.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bgc-img{
+        background-image: url(/img/Stall-image-green.png);
+        background-size: cover;
+        width:65%;
+        height:90vh;
+        position: relative;
+        .logo{
+            position: absolute;
+            top:45px;
+            left:283px;
+            background-image: url(/img/c-logo.png);
+            background-size: cover;
+            width:8%;
+            height:8%;
+        }
+        .c-title{
+            position: absolute;
+            top:55px;
+            left:450px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-align: center;
+            p{
+                margin: 0;
+            }
+            .c-name{
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+                letter-spacing: 5px;
+            }
+        }
+        .left-img{
+            position: absolute;
+            top:290px;
+            left:40px;
+            background-image: url(/img/carousel-1.png);
+            background-size: cover;
+            width:110px;
+            height:110px;
+        }
+        .center-img{
+            position: absolute;
+            top:275px;
+            left:228px;
+            background-image: url(/img/carousel-center.png);
+            background-size: cover;
+            width:50%;
+            height:43%;
+            border-radius: 5px;
+        }
+        .acr-img{
+            position: absolute;
+            right:35px;
+            top:300px;
+            background-image: url(/img/Acr-image.png);
+            background-size: cover;
+            width:19%;
+            height:38%;
+            padding:5px;
+            display: flex;
+            justify-content: center;
+            ul{
+                font-size: 12px;
+                list-style: none;
+                padding: 10px 10px 10px 15px;
+                li{
+                    margin-bottom: 10px;
+                    span{
+                        font-size: 10px;
+                        background:linear-gradient(90deg,blue,lightgreen);
+                        border-radius: 3px;
+                        color:#fff;
+                        padding:3px 5px;
+                    }
+                    p{
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+        .web-img{
+            position: absolute;
+            right:50px;
+            bottom:320px;
+            background-image: url(/img/web.png);
+            background-size: cover;
+            width: 45px;
+            height: 45px;
+        }
+        .button{
+            position: absolute;
+            bottom:60px;
+            left:400px;
+            background-image: url(/img/products-list-green.png);
+            background-size: cover;
+            width: 21%;
+            height: 8%;
+        }
+    }
+}
